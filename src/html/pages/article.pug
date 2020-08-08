@@ -1,0 +1,131 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Статья | Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header()
+
+        // BREADCRUMBS
+        include ../components/breadcrumbs.pug
+        +breadcrumbs('Как выбрать очиститель воздуха', ["Блог"])
+
+        section.content
+            div.container
+                div.row
+                    div.col-lg-9.col-md-12.order-2.order-sm-2.order-lg-1
+                        div.article
+                            div.article__cover
+                                img(src="img/article.png")
+                            div.article__content
+                                p.article__date Вчера 18:24
+
+                                p В помещении человек проводит более 80% своего времени. И это повод задуматься о том, чем вы дышите. А ведь воздух в доме во много раз грязнее уличного. И с этим нужно что-то делать. Рассказываем, почему это так важно и как решить проблему с помощью очистителя воздуха. Время прочтения — 15 минут
+                                p
+                                    a.button.button--violet(href="") Перейти в магазин
+                                p В помещении человек проводит более 80% своего времени. И это повод задуматься о том, чем вы дышите. А ведь воздух в доме во много раз грязнее уличного. И с этим нужно что-то делать. Рассказываем, почему это так важно и как решить проблему с помощью очистителя воздуха. Время прочтения — 15 минут
+                                h2#index1 Почему стоит купить воздухоочиститель (h2)
+                                p Для начала немного статистики. 91% населения живет там, где показатели загрязненного воздуха превышают нормы ВОЗ. Это значит, что 9 человек из 10 дышат загрязненным воздухом, что приводит к 7 млн смертей ежегодно. Треть случаев смертей от сердечных заболеваний, инсульта и рака легких обусловлена именно загрязнением воздуха.
+                                p А в помещениях, где мы проводим практически все время, воздух в десять раз токсичнее уличного: он застаивается, концентрация вредных для здоровья веществ повышается, а опасные бактерии и микроорганизмы активно размножаются. Поэтому очистители воздуха в наше время становятся техникой из разряда must have.
+                                h2#index2 Виды очистителей воздуха
+                                p Они помогут справиться с последствиями смога в больших городах. Весной проблема усугубляется ежегодными поджогами сухостоя. Этой весной некоторые города Украины, включая столицу, по уровню загрязнения воздуха вышли на первое место в мире. Такой антирекорд — повод поставить в своем доме очиститель воздуха. И даже абстрагируясь от чрезвычайных происшествий вроде пылевой бури, в апреле накрывшей Киев, лучше дышать чистым воздухом без аллергенов и пыли с такой вредоносной составляющей, как сапрофиты или пылевые клещи. А они являются переносчиками опасных заболеваний. Среди болезней, возникающих из-за пыли или осложняющихся под ее влиянием: аллергия, астма, сахарный диабет, менингит, атеросклероз, инфаркт, кожные заболевания, болезни почек, нарушения слуха.
+                                p А ведь за год на одном квадратном метре скапливается до трех граммов пыли. Другие пугающие данные: каждый из нас ежедневно вдыхает более трех столовых ложек пыли.
+                                p Очиститель воздуха нужен, если:
+
+                                ul
+                                    li вы живете в промышленном городе;
+                                    li у вас есть дети и домашние животные;
+                                    li в доме есть аллергик, астматик или часто болеющие люди;
+                                    li вы плохо спите и быстро устаете;
+                                    li вы часто просыпаетесь с заложенным носом;
+                                    li у вас проблемная кожа;
+
+                            div.article__bottom
+                                a.article__soc.article__soc--skype(href="")
+                                    img(src="img/article-skype.svg")
+                                a.article__soc.article__soc--twitter(href="")
+                                    img(src="img/article-twitter.svg")
+                                a.article__soc.article__soc--fb(href="")
+                                    img(src="img/article-fb.svg")
+                                a.article__soc.article__soc--vk(href="")
+                                    img(src="img/article-vk.svg")
+
+                    div.col-lg-3.col-md-12.order-1.order-sm-1.order-lg-2
+                        div.article-index
+                            div.article-index__title Оглавление
+                            div.article-index__list
+                                a.article-index__link(href="#index1") Почему стоит купить воздухоочиститель
+                                a.article-index__link(href="#index2") Виды очистителей воздуха
+                                a.article-index__link Что влияет на эффективность очистки воздуха и что такое CADR
+                                a.article-index__link Как выбрать очиститель воздуха: критерии и основные моменты
+                                a.article-index__link Куда поставить и как эксплуатировать
+                                a.article-index__link Ответы на распространенные вопросы
+
+        section.content.similar-wrap
+            div.container
+                div.row
+                    div.col-12
+                        div.similar
+                            div.similar__title Похожие статьи
+                            div.similar-slider
+                                div.similar-slider__slide
+                                    div.item-card.news__card
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            a.item-card__name Представлена обновленная версия ноутбука RedmiBook 14 II
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                                div.similar-slider__slide
+                                    div.item-card.news__card
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            a.item-card__name Игровой смартфон Lenovo Legion засветился на AnTuTu
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                                div.similar-slider__slide
+                                    div.item-card.news__card
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            a.item-card__name Обзор ideapad C340: производительный ноутбук-трансформер от Lenovo
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                                div.similar-slider__slide
+                                    div.item-card.news__card
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            a.item-card__name Moaan при поддержке Xiaomi представила электронную книгу inkPad X
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                                div.similar-slider__slide
+                                    div.item-card.news__card
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            a.item-card__name Moaan при поддержке Xiaomi представила электронную книгу inkPad X
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>

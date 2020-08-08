@@ -1,0 +1,116 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header()
+
+        section.index-slider
+            div.index-slider__slide
+                div.index-slider__image
+                    img(src="img/index.jpg")
+                div.container
+                    div.row
+                        div.col-12
+                            p.index-slider__text По всему свету
+                            p.index-slider__text.index-slider__text--big 4G интернет
+                            p.index-slider__text Роуминг карта
+                            button.button.button--blue.index-slider__button Подробнее
+            div.index-slider__slide
+                div.index-slider__image
+                    img(src="img/index.jpg")
+                div.container
+                    div.row
+                        div.col-12
+                            p.index-slider__text По всему свету
+                            p.index-slider__text.index-slider__text--big 4G интернет
+                            p.index-slider__text Роуминг карта
+                            button.button.button--blue.index-slider__button Подробнее
+
+        section.content.categories
+            div.container
+                div.row
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat1.svg")
+                            p.categories__name Текстиль
+                            p.categories__shops 32 магазина
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat2.svg")
+                            p.categories__name Сельхоз товары
+                            p.categories__shops 17 магазинов
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat3.svg")
+                            p.categories__name Товары для дома
+                            p.categories__shops 23 магазина
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat4.svg")
+                            p.categories__name Электроника
+                            p.categories__shops 55 магазинов
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat5.svg")
+                            p.categories__name Транспорт
+                            p.categories__shops 25 магазинов
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat6.svg")
+                            p.categories__name Недвижимость
+                            p.categories__shops 4 магазина
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat7.svg")
+                            p.categories__name Здоровье и красота
+                            p.categories__shops 8 магазинов
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat8.svg")
+                            p.categories__name Отдам даром
+                            p.categories__shops 57 магазинов
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat9.svg")
+                            p.categories__name Спорт
+                            p.categories__shops 22 магазина
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat10.svg")
+                            p.categories__name Животные
+                            p.categories__shops 48 магазинов
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        a.categories__item(href="")
+                            div.categories__icon
+                                img(src="img/cat11.svg")
+                            p.categories__name Товары для взрослых
+                            p.categories__shops 32 магазина
+                    div.col-6.col-sm-6.col-md-4.col-lg-3.categories__wrap
+                        div.categories__empty
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>

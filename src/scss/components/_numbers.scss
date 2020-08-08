@@ -1,0 +1,71 @@
+.numbers {
+  background: linear-gradient(36.23deg, #1FA2FF -0.33%, #12D8FA 49.69%, #A6FFEF 99.7%);
+  padding: 51px 0 57px;
+
+  @include media-breakpoint-down(lg) {
+    padding: 51px 0 71px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 57px 0;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 31px 0 43px;
+  }
+
+  &__item {
+    padding: 0 10px;
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+      margin-top: 26px!important;
+
+      &:nth-child(1) {
+        margin-top: 0!important;
+      }
+    }
+  }
+
+  &__num {
+    display: block;
+    color: white;
+    font-size: 42px;
+    line-height: 130%;
+
+    @include media-breakpoint-down(md) {
+      width: 135px;
+      text-align: right;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 11px;
+    display: block;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 130px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 17px;
+    }
+  }
+}

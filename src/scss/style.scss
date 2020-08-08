@@ -1,0 +1,38 @@
+@import "plugins/bootstrap/bootstrap";
+@import "plugins/owl";
+
+@import "layout/fonts";
+@import "layout/var";
+@import "layout/app";
+
+@import "components/header";
+@import "components/search";
+@import "components/breadcrumbs";
+
+@import "components/index/index-slider";
+@import "components/index/categories";
+@import "components/index/categories2";
+
+@import "components/news";
+@import "components/article";
+
+@import "components/catalog/catalog";
+@import "components/catalog/catalog-left";
+@import "components/catalog/catalog-settings";
+
+@import "components/item/item";
+@import "components/item/item-photos";
+@import "components/item/item-right";
+
+@import "components/item-card";
+@import "components/similar";
+
+@import "components/pagination";
+@import "components/numbers";
+@import "components/footer";
+
+
+
+
+
+

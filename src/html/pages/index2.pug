@@ -1,0 +1,141 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header()
+
+        section.index-slider
+            div.index-slider__slide
+                div.index-slider__image
+                    img(src="img/index.jpg")
+                div.container
+                    div.row
+                        div.col-12
+                            p.index-slider__text По всему свету
+                            p.index-slider__text.index-slider__text--big 4G интернет
+                            p.index-slider__text Роуминг карта
+                            button.button.button--blue.index-slider__button Подробнее
+            div.index-slider__slide
+                div.index-slider__image
+                    img(src="img/index.jpg")
+                div.container
+                    div.row
+                        div.col-12
+                            p.index-slider__text По всему свету
+                            p.index-slider__text.index-slider__text--big 4G интернет
+                            p.index-slider__text Роуминг карта
+                            button.button.button--blue.index-slider__button Подробнее
+
+        section.content.categories2
+            div.container
+                div.row
+                    div.col-12
+                        h1.categories2__title Магазины электроники
+                div.row
+                    div.col-12.col-md-4.col-lg-3
+                        div.categories2-list
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat1.svg")
+                                | Текстиль
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat2.svg")
+                                | Сельхоз товары
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat3.svg")
+                                | Товары для дома
+                            span.categories2-list__link.categories2-list__link--active
+                                span.categories2-list__icon
+                                    img(src="img/cat4.svg")
+                                | Электроника
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat5.svg")
+                                | Транспорт
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat6.svg")
+                                | Недвижимость
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat7.svg")
+                                | Здоровье и красота
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat8.svg")
+                                | Отдам даром
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat9.svg")
+                                | Спорт
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat10.svg")
+                                | Животные
+                            a.categories2-list__link(href="")
+                                span.categories2-list__icon
+                                    img(src="img/cat11.svg")
+                                | Товары для взрослых
+
+                    div.col-12.col-md-8.col-lg-9
+                        div.row
+                            div.col-6.col-md-6.col-lg-4.categories2__wrap
+                                a.categories2__item(href="")
+                                    div.categories2__icon
+                                        img(src="img/shop1.png")
+                                    p.categories2__name Интим бутик (No Taboo)
+                            div.col-6.col-md-6.col-lg-4.categories2__wrap
+                                a.categories2__item(href="")
+                                    div.categories2__icon
+                                        img(src="img/shop2.png")
+                                    p.categories2__name Answear (Ансвер)
+                            div.col-6.col-md-6.col-lg-4.categories2__wrap
+                                a.categories2__item(href="")
+                                    div.categories2__icon
+                                        img(src="img/shop3.png")
+                                    p.categories2__name Gold.ua (Голд юа)
+                            div.col-6.col-md-6.col-lg-4.categories2__wrap
+                                a.categories2__item(href="")
+                                    div.categories2__icon
+                                        img(src="img/shop1.png")
+                                    p.categories2__name Hilt.com.ua (Хилт)
+                            div.col-6.col-md-6.col-lg-4.categories2__wrap
+                                a.categories2__item(href="")
+                                    div.categories2__icon
+                                        img(src="img/shop2.png")
+                                    p.categories2__name Gold.ua (Голд юа)
+                            div.col-6.col-md-6.col-lg-4.categories2__wrap
+                                a.categories2__item(href="")
+                                    div.categories2__icon
+                                        img(src="img/shop3.png")
+                                    p.categories2__name Status-shop.ua (Статус Шоп)
+                            div.col-6.col-md-6.col-lg-4.categories2__wrap
+                                a.categories2__item(href="")
+                                    div.categories2__icon
+                                        img(src="img/shop1.png")
+                                    p.categories2__name Sunduk.com (Сундук)
+                            div.col-6.col-md-6.col-lg-4.categories2__wrap
+                                a.categories2__item(href="")
+                                    div.categories2__icon
+                                        img(src="img/shop2.png")
+                                    p.categories2__name TopMall (Топмалл)
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>

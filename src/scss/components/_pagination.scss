@@ -1,0 +1,49 @@
+.pagination {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: $dark;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: 0.3s;
+    flex-shrink: 0;
+
+    @include media-breakpoint-down(xs) {
+      display: none;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-last-child(2),
+      &:nth-last-child(1) {
+        display: flex;
+      }
+    }
+
+    &:hover {
+      color: $violet;
+      text-decoration: none;
+    }
+
+    &--active {
+      background: $violet;
+      color: white!important;
+    }
+  }
+
+  span.pagination__link {
+    cursor: default;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+}

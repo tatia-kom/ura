@@ -1,0 +1,376 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Объявление | Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header()
+
+        // SEARCH
+        include ../components/search.pug
+
+        // BREADCRUMBS
+        include ../components/breadcrumbs.pug
+        +breadcrumbs(null, ["Молдова", "Электроника", "Мобильные телефоны"])
+
+        section.content.item-wrap
+            div.container
+                div.row
+                    // item
+
+                    div.col-lg-9.col-12
+                        div.item
+                            // head
+
+                            div.item-head
+                                div.item-head__top
+                                    // Add class "item-head__fav--active" if item is in favorite list
+                                    button.item-head__fav
+                                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 1L16.708 8.56993L25 9.79127L19 15.6803L20.416 24L13 20.0699L5.584 24L7 15.6803L1 9.79127L9.292 8.56993L13 1Z" stroke="#CECFDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    h1.item-head__title Мобильный телефон Сяоми
+                                        span.item-head__label Приват
+                                    div.item-card__stars.item-head__rate
+                                        span.item-card__star.item-card__star--full
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                            </svg>
+                                        span.item-card__star.item-card__star--full
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                            </svg>
+                                        span.item-card__star.item-card__star--full
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                            </svg>
+                                        span.item-card__star.item-card__star--full
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                            </svg>
+                                        span.item-card__star
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                            </svg>
+                                        | 4.2
+                                div.item-head__bottom
+                                    div.item-sum
+                                        span.item-sum__price 600 грн
+                                        span.item-sum__bidding Торг
+                                    div.item-head__info
+                                        span.item-head__place Золотоноша
+                                        span.item-head__views 11 285
+                                        span.item-head__buys 695
+                                        span.item-head__date Вчера 18:24
+
+                            // photos
+
+                            div.item-photos
+                                div.item-photos-main
+                                    div.item-photos-main__slide
+                                        img(src="img/item.png")
+                                    div.item-photos-main__slide
+                                        img(src="img/item.png")
+                                    div.item-photos-main__slide
+                                        img(src="img/item.png")
+                                    div.item-photos-main__slide
+                                        img(src="img/item.png")
+
+                                div.item-photos-nav
+                                    div.item-photos-nav__content
+                                        div.item-photos-nav__slide.item-photos-nav__slide--active
+                                            img(src="img/item.png")
+                                        div.item-photos-nav__slide
+                                            img(src="img/item.png")
+                                        div.item-photos-nav__slide
+                                            img(src="img/item.png")
+                                        div.item-photos-nav__slide
+                                            img(src="img/item.png")
+
+                            // description
+
+                            div.item__description
+                                p.item__name Описание
+                                div.item__text
+                                    p Продам относительно редкую модель с 6 гигами оперативки на борту: Note 5, 6/64
+                                    p С чем идёт в комплекте:
+                                    ul
+                                        li зарядка
+                                        li коробка
+                                        li в комплекте 3-4 чехла, покупал для себя
+                                    p •• Отправляю только через ОЛХ-ДОСТАВКА
+                                    p ••• Почему ??
+                                    p 1) Безопасно для вас, так как я не получаю на карту денег
+                                    p 2) Безопасно для меня, так как если вы передумаете, я не попаду на 200 грн
+                                    p ••• Для тех, кто упорно пишет "а отправите наложкой" повторяю: отправка ТОЛЬКО через "Олх-доставка". Иных вариантов не предусмотрено во избежание мошенничества.
+                                    p Посмотреть можно в Одессе, Центр/Фонтан
+                                    p Спасибо). Для быстрой связи я в телеграм
+
+                                p.item__name Дополнительные детали
+                                table.item__details
+                                    tr
+                                        td Бренд
+                                        td Xiaomi
+                                    tr
+                                        td Состояние
+                                        td Новое
+                                    tr
+                                        td Комплект
+                                        td Полный
+
+                                div.item__tags
+                                    span.item__tag Текстиль
+                                    span.item__tag Сельхоз товары
+                                    span.item__tag Товары для взрослых
+
+                    // item right
+
+                    div.col-lg-3.col-12.item-right-wrap
+                        div.item-right
+                            div.row
+                                div.col-12.col-md-6.col-lg-12
+                                    div.item-author
+                                        div.item-author__top
+                                            div.item-author__ava
+                                                img(src="img/item-ava.png")
+                                            div.item-author__info
+                                                p.item-author__name Кирилл
+                                                p.item-author__place Золотоноша
+                                        div.item-author__buttons
+                                            a.button.button--bordered.item-author__message Отправить сообщение
+                                            a.button.button--violet.item-author__call
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.9996 10.4817V12.5893C14.0004 12.7849 13.9602 12.9786 13.8817 13.1578C13.8031 13.3371 13.6879 13.498 13.5435 13.6303C13.399 13.7626 13.2285 13.8633 13.0428 13.9259C12.8571 13.9886 12.6603 14.0119 12.465 13.9943C10.299 13.7594 8.2183 13.0207 6.39023 11.8376C4.68945 10.7589 3.24748 9.31984 2.16674 7.62243C0.977102 5.78969 0.236769 3.70306 0.00571348 1.53156C-0.011877 1.33729 0.0112568 1.1415 0.0736417 0.956639C0.136027 0.77178 0.236296 0.601911 0.368066 0.457846C0.499835 0.313781 0.660218 0.198678 0.839003 0.119863C1.01779 0.0410494 1.21106 0.000251806 1.40651 6.81111e-05H3.51826C3.85987 -0.00328744 4.19105 0.117444 4.45007 0.33976C4.70909 0.562076 4.87828 0.870806 4.92609 1.20841C5.01522 1.88287 5.18052 2.54511 5.41883 3.18249C5.51354 3.43394 5.53403 3.70721 5.47789 3.96993C5.42175 4.23265 5.29132 4.4738 5.10207 4.66481L4.20809 5.55701C5.21016 7.31581 6.6693 8.77206 8.43159 9.77214L9.32556 8.87994C9.51695 8.69106 9.75858 8.56089 10.0218 8.50486C10.2851 8.44883 10.5589 8.46929 10.8108 8.56381C11.4495 8.80164 12.113 8.96662 12.7888 9.05557C13.1308 9.10371 13.4431 9.2756 13.6663 9.53855C13.8895 9.8015 14.0081 10.1372 13.9996 10.4817Z" fill="white"/>
+                                                </svg>
+                                                | +342 58756548
+                                        p.item-author__time Звонить с 17 до 20
+                                        div.item-author__bottom
+                                            a.item-author__claim(href="") Пожаловаться
+
+                                    div.footer-socials.item-socials
+                                        a.footer-socials__item
+                                            <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M25 2.43589C24.1071 2.8205 23.0868 3.07692 22.0663 3.20513C23.0868 2.5641 23.9796 1.53846 24.3622 0.384619C23.3418 1.02564 22.3214 1.41026 21.0459 1.66667C20.1531 0.641029 18.75 0 17.3469 0C14.5408 0 12.2449 2.30769 12.2449 5.1282C12.2449 5.51282 12.2449 5.89743 12.3725 6.28204C8.16327 6.02563 4.33673 3.97435 1.78571 0.897432C1.40305 1.66666 1.14795 2.5641 1.14795 3.46153C1.14795 5.2564 2.04081 6.79487 3.44388 7.6923C2.55102 7.6923 1.78571 7.43589 1.14795 7.05128C1.14795 9.48717 2.93366 11.6667 5.22958 12.0513C4.84693 12.1795 4.33674 12.1795 3.82653 12.1795C3.44388 12.1795 3.18877 12.1795 2.80612 12.0513C3.44388 14.1026 5.35715 15.641 7.65306 15.641C5.86735 17.0513 3.69898 17.8205 1.27551 17.8205C0.892858 17.8205 0.510204 17.8205 0 17.6923C2.29592 19.1026 4.97449 20 7.90816 20C17.3469 20 22.449 12.1795 22.449 5.38461V4.74358C23.4694 4.35897 24.3622 3.46153 25 2.43589Z" fill="#00A7F1"/>
+                                            </svg>
+                                        a.footer-socials__item
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 3.48186C21 1.63212 19.3679 0 17.5181 0H3.48186C1.63212 0 0 1.63212 0 3.48186V17.5181C0 19.3679 1.63212 21 3.48186 21H10.5544V13.057H7.94301V9.57513H10.5544V8.16062C10.5544 5.76684 12.2953 3.69947 14.4715 3.69947H17.3005V7.18134H14.4715C14.1451 7.18134 13.8186 7.50777 13.8186 8.16062V9.57513H17.3005V13.057H13.8186V21H17.5181C19.3679 21 21 19.3679 21 17.5181V3.48186Z" fill="#00A7F1"/>
+                                            </svg>
+                                        a.footer-socials__item
+                                            <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M26.7492 14.3562C26.7492 14.2466 26.6418 14.2466 26.6418 14.137C26.2121 13.2603 25.2452 12.1644 23.9561 10.9589C23.3116 10.411 22.9893 9.9726 22.7744 9.75342C22.4521 9.31507 22.4522 8.98631 22.5596 8.54795C22.667 8.21919 23.0967 7.67123 23.8487 6.68493C24.2784 6.13698 24.4932 5.80822 24.8155 5.47946C26.4269 3.28767 27.1789 1.863 26.964 1.20547L26.8566 1.09589C26.7492 0.986302 26.6418 0.876716 26.4269 0.876716C26.2121 0.767127 25.8898 0.767127 25.5675 0.876716H21.4853C21.3779 0.876716 21.3779 0.876716 21.163 0.876716C21.0556 0.876716 20.9482 0.876716 20.9482 0.876716H20.8408H20.7333L20.6259 0.986295C20.5185 1.09588 20.5185 1.09588 20.5185 1.20547C20.0887 2.41095 19.5516 3.39725 19.0145 4.49314C18.6922 5.04109 18.3699 5.58904 18.0477 6.0274C17.7254 6.46576 17.5105 6.79452 17.2957 7.0137C17.0808 7.23287 16.866 7.34246 16.7585 7.56164C16.6511 7.67123 16.4363 7.78083 16.4363 7.67124C16.3288 7.67124 16.2214 7.67123 16.2214 7.56164C16.114 7.45205 16.0066 7.34246 15.8991 7.23287C15.7917 7.12328 15.7917 6.9041 15.6843 6.68493C15.6843 6.46575 15.6843 6.24657 15.6843 6.13698C15.6843 6.02739 15.6843 5.69863 15.6843 5.47946C15.6843 5.15069 15.6843 4.9315 15.6843 4.82191C15.6843 4.49315 15.6843 4.0548 15.6843 3.61644C15.6843 3.17809 15.6843 2.84931 15.6843 2.63013C15.6843 2.41095 15.6843 2.08219 15.6843 1.86301C15.6843 1.53424 15.6843 1.31506 15.6843 1.20547C15.6843 1.09588 15.5769 0.87671 15.5769 0.76712C15.4694 0.657531 15.362 0.547939 15.2546 0.43835C15.1471 0.328761 14.9323 0.328764 14.8249 0.219175C14.2877 0.109586 13.6432 0 12.8912 0C11.1724 0 9.99067 0.109592 9.56097 0.328771C9.34612 0.43836 9.13126 0.547942 9.02384 0.76712C8.80898 0.986299 8.80898 1.09589 8.9164 1.09589C9.45354 1.20548 9.88325 1.42465 10.0981 1.75342L10.2055 1.97261C10.313 2.0822 10.3129 2.30136 10.4204 2.63013C10.5278 2.9589 10.5278 3.28767 10.5278 3.72602C10.5278 4.38356 10.5278 5.0411 10.5278 5.47946C10.5278 6.0274 10.4204 6.35616 10.4204 6.68493C10.4204 7.01369 10.313 7.23288 10.2055 7.34247C10.0981 7.56165 10.0981 7.67124 9.99067 7.67124C9.99067 7.67124 9.99066 7.78082 9.88323 7.78082C9.77581 7.78082 9.66839 7.89041 9.45354 7.89041C9.34611 7.89041 9.13126 7.78083 9.02384 7.67124C8.80898 7.56165 8.59413 7.34247 8.4867 7.12329C8.27185 6.90411 8.05699 6.57534 7.84214 6.13698C7.62729 5.69862 7.30499 5.26027 7.09014 4.60274L6.87531 4.16439C6.76788 3.94521 6.55303 3.50685 6.33817 2.9589C6.12332 2.41096 5.90846 1.97261 5.69361 1.42466C5.58618 1.20548 5.47877 1.09588 5.37134 0.986295H5.26391C5.26391 0.986295 5.15647 0.876716 5.04904 0.876716C4.94162 0.876716 4.8342 0.76712 4.72678 0.76712H0.859415C0.429709 0.76712 0.21486 0.876706 0.107433 0.986295L0 1.09589C0 1.09589 0 1.20548 0 1.31507C0 1.42466 6.55519e-06 1.53424 0.107433 1.75342C0.644566 3.06849 1.28912 4.38356 1.93368 5.69863C2.57824 6.90411 3.2228 8 3.65251 8.76713C4.18964 9.53425 4.61934 10.3014 5.15648 10.9589C5.69361 11.6164 6.01588 12.0548 6.12331 12.274C6.33816 12.4932 6.44558 12.6027 6.55301 12.7123L6.87531 13.0411C7.09016 13.2603 7.41243 13.589 7.84214 13.9178C8.27184 14.2466 8.80897 14.5753 9.3461 14.9041C9.88323 15.2329 10.5278 15.4521 11.1724 15.6712C11.9244 15.8904 12.5689 16 13.2135 15.8904H14.8249C15.1471 15.8904 15.362 15.7808 15.5769 15.5617L15.6843 15.4521C15.6843 15.3425 15.7917 15.3425 15.7917 15.2329C15.7917 15.1233 15.7917 15.0137 15.7917 14.7945C15.7917 14.3562 15.7917 14.0274 15.8991 13.6986C16.0066 13.3699 16.0066 13.1507 16.114 12.9315C16.2214 12.7123 16.3288 12.6027 16.4363 12.4932C16.5437 12.3836 16.6511 12.274 16.6511 12.274H16.7585C16.9734 12.1644 17.2957 12.274 17.5105 12.4932C17.8328 12.7123 18.1551 13.0411 18.3699 13.3699C18.5848 13.6986 18.9071 14.0274 19.3368 14.4658C19.7665 14.9041 20.0888 15.2329 20.3036 15.3425L20.6259 15.5617C20.8407 15.6712 21.0556 15.7808 21.3779 15.8904C21.7002 16 21.915 16 22.1298 16L25.7824 15.8904C26.1047 15.8904 26.4269 15.7808 26.6418 15.6712C26.8566 15.5617 26.964 15.4521 26.964 15.2329C26.964 15.1233 26.964 14.9041 26.964 14.7945C26.7492 14.5754 26.7492 14.4658 26.7492 14.3562Z" fill="#00A7F1"/>
+                                            </svg>
+                                        a.footer-socials__item
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.0115 0H2.98846C1.29231 0 0 1.29231 0 2.98846V18.0115C0 19.7077 1.29231 21 2.98846 21H18.0115C19.7077 21 21 19.7077 21 18.0115V2.98846C21 1.29231 19.7077 0 18.0115 0ZM10.5 16.8C13.9731 16.8 16.8 14.0538 16.8 10.7423C16.8 10.1769 16.7192 9.53077 16.5577 9.04615H18.3346V17.6077C18.3346 18.0115 18.0115 18.4154 17.5269 18.4154H3.47308C3.06923 18.4154 2.66539 18.0923 2.66539 17.6077V8.96538H4.52308C4.36154 9.53077 4.28077 10.0962 4.28077 10.6615C4.2 14.0538 7.02692 16.8 10.5 16.8ZM10.5 14.3769C8.23846 14.3769 6.46154 12.6 6.46154 10.4192C6.46154 8.23846 8.23846 6.46154 10.5 6.46154C12.7615 6.46154 14.5385 8.23846 14.5385 10.4192C14.5385 12.6808 12.7615 14.3769 10.5 14.3769ZM18.2539 5.73461C18.2539 6.21923 17.85 6.62308 17.3654 6.62308H15.1038C14.6192 6.62308 14.2154 6.21923 14.2154 5.73461V3.55385C14.2154 3.06923 14.6192 2.66538 15.1038 2.66538H17.3654C17.85 2.66538 18.2539 3.06923 18.2539 3.55385V5.73461Z" fill="#00A7F1"/>
+                                            </svg>
+                                div.col-12.col-md-6.col-lg-12
+                                    div.item-advices
+                                        p.item-advices__title Советы по безопасности для покупателей
+                                        ul.item-advices__list
+                                            li Встретиться с продавцом в общественном месте
+                                            li Воспользуйтесь наложным платежом при доставке товара.
+                                            li Заключайте договор.
+
+        section.content.similar-wrap
+            div.container
+                div.row
+                    div.col-12
+                        div.similar
+                            div.similar__title Похожие товары
+                            div.similar-slider
+                                div.similar-slider__slide
+                                    div.item-card.item-card--similar
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            div.item-card__stars
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                | 4.2
+                                            a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                        div.item-card__other
+                                            div.item-card__flex
+                                                span.item-card__place Высокий
+                                                span.item-card__price 600 грн.
+                                            div.item-card__bottom
+                                                span.item-card__date Вчера 18:24
+                                                span.item-card__views 13 284
+                                                span.item-card__buys 2955
+                                div.similar-slider__slide
+                                    div.item-card.item-card--similar
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            div.item-card__stars
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                | 4.2
+                                            a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                        div.item-card__other
+                                            div.item-card__flex
+                                                span.item-card__place Киев
+                                                span.item-card__price 600 грн.
+                                            div.item-card__bottom
+                                                span.item-card__date Вчера 18:24
+                                                span.item-card__views 13 284
+                                div.similar-slider__slide
+                                    div.item-card.item-card--similar
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            div.item-card__stars
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                | 4.2
+                                            a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                        div.item-card__other
+                                            div.item-card__flex
+                                                span.item-card__place Золотоноша
+                                                span.item-card__price 1200 грн.
+                                            div.item-card__bottom
+                                                span.item-card__date Вчера 18:24
+                                                span.item-card__views 1253
+                                                span.item-card__buys 11
+                                div.similar-slider__slide
+                                    div.item-card.item-card--similar
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            div.item-card__stars
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                | 4.2
+                                            a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                        div.item-card__other
+                                            div.item-card__flex
+                                                span.item-card__place Высокий
+                                                span.item-card__price 280 грн.
+                                            div.item-card__bottom
+                                                span.item-card__date Вчера 18:24
+                                                span.item-card__views 782
+                                                span.item-card__buys 34
+                                div.similar-slider__slide
+                                    div.item-card.item-card--similar
+                                        div.item-card__image
+                                            img(src="img/item1.png")
+                                        div.item-card__info
+                                            div.item-card__stars
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star.item-card__star--full
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                span.item-card__star
+                                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                    </svg>
+                                                | 4.2
+                                            a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                        div.item-card__other
+                                            div.item-card__flex
+                                                span.item-card__place Высокий
+                                                span.item-card__price 280 грн.
+                                            div.item-card__bottom
+                                                span.item-card__date Вчера 18:24
+                                                span.item-card__views 782
+                                                span.item-card__buys 34
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>

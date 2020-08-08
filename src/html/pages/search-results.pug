@@ -1,0 +1,577 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Результаты поиска | Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header()
+
+        // BREADCRUMBS
+        include ../components/breadcrumbs.pug
+        +breadcrumbs('Soroca', ["Молдова"])
+
+        section.catalog-categories
+            div.container
+                div.row
+                    div.col-12
+                        div.catalog-categories__list
+                            a.catalog-categories__item(href="") Текстиль
+                            a.catalog-categories__item(href="") Сельхоз товары
+                            a.catalog-categories__item(href="") Товары для взрослых
+                            a.catalog-categories__item(href="") Электроника
+                            a.catalog-categories__item(href="") Транспорт
+                            a.catalog-categories__item(href="") Недвижимость
+                            a.catalog-categories__item(href="") Здоровье и красота
+                            a.catalog-categories__item(href="") Отдам даром
+                            a.catalog-categories__item(href="") Спорт
+                            a.catalog-categories__item(href="") Животные
+
+        div.content.catalog
+            div.container
+                div.row
+                    div.col-lg-3.d-none.d-lg-block
+                        div.catalog-left
+                            p.catalog-left__title Срок
+                            div.catalog-left__radio-group
+                                div.form-check
+                                    input.form-check-input(type="radio" value="" id="term1" name="term")
+                                    label.form-check-label(for="term1") 24 часа
+                                div.form-check
+                                    input.form-check-input(type="radio" value="" id="term2" name="term" checked)
+                                    label.form-check-label(for="term2") 3 дня
+                                div.form-check
+                                    input.form-check-input(type="radio" value="" id="term3" name="term")
+                                    label.form-check-label(for="term3") 7 дней
+                                div.form-check
+                                    input.form-check-input(type="radio" value="" id="term4" name="term")
+                                    label.form-check-label(for="term4") 30 дней
+
+                            p.catalog-left__title Категории
+                            div.catalog-left-categories
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Текстиль
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Сельхозтовары
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Товары для дома
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Электроника
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Транспорт
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Недвижимость
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Здоровье и красота
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Отдам даром
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Спорт
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Животные
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+                                div.catalog-left-categories__item.catalog-left-categories__item--active
+                                    span.catalog-left-categories__name
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 5.44444V9M9 9V12.5556M9 9H5.44444M9 9H12.5556M2.77778 1H15.2222C16.2041 1 17 1.79594 17 2.77778V15.2222C17 16.2041 16.2041 17 15.2222 17H2.77778C1.79594 17 1 16.2041 1 15.2222V2.77778C1 1.79594 1.79594 1 2.77778 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Товары для взрослых
+                                    div.catalog-left-categories__list
+                                        a.catalog-left-categories__subitem(href="") Легковые автомобили
+                                        a.catalog-left-categories__subitem(href="") Автомобили из Польши
+                                        a.catalog-left-categories__subitem(href="") Грузовые автомобили
+
+
+
+                    div.col-lg-9.col-xs-12
+                        div.catalog-settings
+                            div.catalog-settings__top
+                                div.catalog-settings-tabs
+                                    a.catalog-settings-tabs__item.catalog-settings-tabs__item--active(href="")
+                                        | Все <span class="d-none d-sm-inline">&nbsp;объявления</span>
+                                        span.catalog-settings-tabs__count 0
+                                    a.catalog-settings-tabs__item(href="")
+                                        | Privat
+                                        span.catalog-settings-tabs__count 0
+                                    a.catalog-settings-tabs__item(href="")
+                                        | Professional
+                                        span.catalog-settings-tabs__count 0
+
+                                select.catalog-settings__sort
+                                    option Сначала дорогие
+                                    option Сначала дешевые
+
+                                div.catalog-settings__view.catalog-settings__view--left
+                                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7H19M1 1H19M1 13H19" stroke="#CECFDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                div.catalog-settings__view.catalog-settings__view--active
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 1H1V8H8V1Z" stroke="#CECFDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19 1H12V8H19V1Z" stroke="#CECFDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19 12H12V19H19V12Z" stroke="#CECFDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 12H1V19H8V12Z" stroke="#CECFDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                            div.catalog-settings__options
+                                div.catalog-settings__option
+                                    | Все объявления
+                                    span.catalog-settings__option-delete
+                                div.catalog-settings__option
+                                    | 50 км Sorosa
+                                    span.catalog-settings__option-delete
+
+                            p.catalog-settings__empty-result Безрезультатно. Уточните поиск с использованием других критериев
+
+                        div.catalog-start
+                            div.catalog-start__content
+                                p.catalog-start__title Имеете что-нибудь для продажи или аренды?
+                                p.catalog-start__text Продавайте свои товары и услуги онлайн бесплатно. <br />Это проще, чем вы думаете!
+                                button.button.button--violet.catalog-start__button Начать сейчас
+
+
+                        // block view cards
+
+                        div.row
+                            div.col-md-4.col-sm-6
+                                div.item-card.item-card--catalog
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                        span.item-card__label Топ
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Золотоноша
+                                            span.item-card__price 999 грн.
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 5520
+                                            span.item-card__buys 125
+                            div.col-md-4.col-sm-6
+                                div.item-card.item-card--catalog
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                        span.item-card__label Топ
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Высокий
+                                            span.item-card__price 11 500 $
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 18 047
+                                            span.item-card__buys 448
+                            div.col-md-4.col-sm-6
+                                div.item-card.item-card--catalog
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                        span.item-card__label Топ
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Киев
+                                            span.item-card__price 600 грн
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 11 285
+                                            span.item-card__buys 695
+                            div.col-md-4.col-sm-6
+                                div.item-card.item-card--catalog
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Высокий
+                                            span.item-card__price 600 грн.
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                                            span.item-card__buys 2955
+                            div.col-md-4.col-sm-6
+                                div.item-card.item-card--catalog
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Киев
+                                            span.item-card__price 600 грн.
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                            div.col-md-4.col-sm-6
+                                div.item-card.item-card--catalog
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Высокий
+                                            span.item-card__price 280 грн.
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 782
+                                            span.item-card__buys 34
+
+                        // list view cards
+
+                        div.row
+                            div.col-md-12.col-xs-12.col-sm-6
+                                // Just add class "item-card--list_view" to make card list view designed
+                                div.item-card.item-card--catalog.item-card--list_view
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                        span.item-card__label Топ
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name Портмоне COACH барсетка кошелек оригинал кожа
+                                        p.item-card__description Для современного мира глубокий уровень погружения играет определяющее значение для переосмысления внешнеэкономических политик.
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Киев
+                                            span.item-card__price 600 грн.
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                                            span.item-card__buys 2955
+                            div.col-md-12.col-xs-12.col-sm-6
+                                // Just add class "item-card--list_view" to make card list view designed
+                                div.item-card.item-card--catalog.item-card--list_view
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                        span.item-card__label Топ
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name барсетка кошелек оригинал кожа
+                                        p.item-card__description Противоположная точка зрения подразумевает, что активно развивающиеся страны третьего мира, превозмогая сложившуюся непростую экономическую ситуацию, функционально разнесены на независимые элементы.
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Высокий
+                                            span.item-card__price 1800 грн.
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                                            span.item-card__buys 2955
+                            div.col-md-12.col-xs-12.col-sm-6
+                                // Just add class "item-card--list_view" to make card list view designed
+                                div.item-card.item-card--catalog.item-card--list_view
+                                    div.item-card__image
+                                        img(src="img/item1.png")
+                                    div.item-card__info
+                                        div.item-card__stars
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star.item-card__star--full
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            span.item-card__star
+                                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 0L9.163 4.27865L14 4.96898L10.5 8.29758L11.326 13L7 10.7787L2.674 13L3.5 8.29758L0 4.96898L4.837 4.27865L7 0Z" fill="#EEEEEE"/>
+                                                </svg>
+                                            | 4.2
+                                        a.item-card__name Портмоне COACH барсетка
+                                        p.item-card__description Прежде всего, консультация с широким активом требует определения и уточнения модели развития.
+                                    div.item-card__other
+                                        div.item-card__flex
+                                            span.item-card__place Киев
+                                            span.item-card__price 700 грн.
+                                        div.item-card__bottom
+                                            span.item-card__date Вчера 18:24
+                                            span.item-card__views 13 284
+                                            span.item-card__buys 2955
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>

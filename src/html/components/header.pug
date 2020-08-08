@@ -1,0 +1,18 @@
+mixin header(cl)
+
+    header.header(class=cl)
+        div.container
+            div.row
+                div.col-12.d-flex.align-items-center.header__content
+                    a.header__logo(href="index.html")
+                        img(src="img/logo.svg")
+
+                    div.header__language
+                        select.header__language-select
+                            option RU
+                            option EN
+
+                    a.header__link.header__link--login Войти
+                    a.header__link.header__link--signup.d-none.d-md-block Регистрация
+
+                    a.button.button--bordered.header__add.d-none.d-lg-flex Добавить объявление

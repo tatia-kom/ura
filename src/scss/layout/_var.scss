@@ -1,0 +1,35 @@
+//fonts
+
+$font: 'Source Sans Pro Regular';
+$font600: 'Source Sans Pro Semibold';
+$fontBold: 'Source Sans Pro Bold';
+
+//colors
+
+$txt: #636B7A;
+$violet: #913E98;
+$blue: #00A7F1;
+$background: #F7F7F7;
+$divider: #CECFDA;
+$dark: #282B30;
+$grey: #8C8C8C;
+
+// mixins
+
+@mixin placeholderColor($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+  &::placeholder {
+    color: $color;
+  }
+}
