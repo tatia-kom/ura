@@ -1,0 +1,140 @@
+.profile-left {
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 30px 25px;
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    position: relative;
+    padding: 19px 60px 19px 21px;
+    border: 2px solid $blue;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      top: 10px;
+      right: 10px;
+      background: $blue;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 9px;
+      height: 6px;
+      top: 27px;
+      right: 25px;
+      background: url('../img/categories-list-arrow.svg');
+    }
+
+    &:hover {
+      border: 0;
+      padding: 20px 20px 25px;
+
+      &:before, &:after {
+        display: none;
+      }
+
+      .item-author__top, .profile-left__divider, .profile-left__link {
+        display: flex;
+      }
+
+      .profile-left__link--active {
+        display: flex;
+        margin-top: 17px;
+        color: $violet;
+
+        .profile-left__icon, .profile-left__badge {
+          display: flex;
+        }
+      }
+    }
+
+    .item-author__top, .profile-left__divider, .profile-left__link {
+      display: none;
+    }
+
+    .profile-left__link--active {
+      display: flex;
+      margin-top: 0;
+      color: $dark;
+
+      .profile-left__icon, .profile-left__badge {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin: 20px 10px 10px;
+  }
+
+  &__divider {
+    height: 1px;
+    background: $divider;
+    margin-bottom: 4px;
+    margin-top: 21px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    transition: 0.3s;
+    color: $dark;
+    text-decoration: none!important;
+
+    .profile-left__icon svg path {
+      transition: 0.3s;
+    }
+
+    &:hover, &--active {
+      color: $violet;
+
+      .profile-left__icon svg path {
+        stroke: $violet;
+      }
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    height: 20px;
+    display: flex;
+    margin-right: 18px;
+
+    svg {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: auto;
+
+      path {
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &__badge {
+    margin-left: auto;
+    display: block;
+    border-radius: 50px;
+    background: $violet;
+    font-size: 13px;
+    color: white;
+    padding: 1px 7px 2px;
+    min-width: 25px;
+    text-align: center;
+    justify-content: center;
+  }
+}

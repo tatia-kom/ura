@@ -74,7 +74,7 @@ select, button, input, textarea {
             background: #3FC4FF;
         }
 
-        &:active, :focus {
+        &:active, &:focus {
             background: #0078AD;
         }
     }
@@ -87,7 +87,7 @@ select, button, input, textarea {
             background: #BA5BC2;
         }
 
-        &:active, :focus {
+        &:active, &:focus {
             background: #541D58
         }
     }
@@ -101,7 +101,7 @@ select, button, input, textarea {
             border-width: 4px;
         }
 
-        &:active, :focus {
+        &:active, &:focus {
             background: $blue;
         }
     }
@@ -148,6 +148,54 @@ select, button, input, textarea {
             &:before {
                 background: $violet;
                 border-color: $violet;
+            }
+        }
+    }
+
+    .form-check-input[type=checkbox] {
+        opacity: 0;
+        position: absolute;
+
+        & + .form-check-label {
+            font-size: 17px;
+            line-height: 130%;
+            color: $dark;
+            padding-left: 12px;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: -1px;
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                border: 2px solid $blue;
+                background: transparent;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 6px;
+                top: 6px;
+                width: 14px;
+                height: 10px;
+                border-radius: 50%;
+                background: url('../img/checkbox.svg');
+                opacity: 0;
+            }
+        }
+
+        &:checked + .form-check-label {
+            &:before {
+                background: $blue;
+            }
+
+            &:after {
+                opacity: 1;
             }
         }
     }
@@ -234,5 +282,67 @@ select, button, input, textarea {
                 background: linear-gradient(81.91deg, #1FA2FF -0.33%, #12D8FA 49.69%, #A6FFEF 99.7%);
             }
         }
+    }
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+    padding: 10px 20px;
+    border-color: $divider;
+}
+
+.dropdown-divider {
+    border-color: $background;
+}
+
+.dropdown-item {
+    padding-left: 0;
+    padding-right: 0;
+    transition: 0.3s;
+    font-size: 14px;
+
+    &:hover {
+        color: $blue!important;
+        background: transparent;
+    }
+
+    &:active, &:focus {
+        background: transparent;
+    }
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-color: $divider;
+    border-radius: 4px;
+    transition: 0.3s;
+
+    &:focus {
+        box-shadow: none;
+        border-color: $blue;
+    }
+}
+
+input.form-control-lg {
+    font-size: 17px;
+    height: 50px;
+    padding: 0 18px;
+}
+
+.flex-label {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none!important;
+    transition: 0.3s;
+    color: $blue;
+
+    &:hover {
+        color: #0078AD;
     }
 }

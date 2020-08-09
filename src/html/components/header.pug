@@ -1,4 +1,4 @@
-mixin header(cl)
+mixin header(cl, isAuthorized)
 
     header.header(class=cl)
         div.container
@@ -12,7 +12,18 @@ mixin header(cl)
                             option RU
                             option EN
 
-                    a.header__link.header__link--login Войти
-                    a.header__link.header__link--signup.d-none.d-md-block Регистрация
+                    if isAuthorized
+                        div.dropdown
+                            button.header__profile(id="profileMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Admin
+                            div.dropdown-menu.header__dropdown(aria-labelledby="profileMenuButton")
+                                a.dropdown-item(href="") Профиль
+                                a.dropdown-item(href="") Мои объвления
+                                a.dropdown-item(href="") Диалоги
+                                div.dropdown-divider
+                                a.dropdown-item(href="") Выйти
+
+                    else
+                        a.header__link.header__link--login Войти
+                        a.header__link.header__link--signup.d-none.d-md-block Регистрация
 
                     a.button.button--bordered.header__add.d-none.d-lg-flex Добавить объявление

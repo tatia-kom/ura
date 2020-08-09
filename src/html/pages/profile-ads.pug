@@ -1,0 +1,182 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Мои объявления | Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header('', true)
+
+        // BREADCRUMBS
+        include ../components/breadcrumbs.pug
+        +breadcrumbs('Мои объявления', ["Личный кабинет"])
+
+        section.content.profile
+            div.container-md.container-fluid
+                div.row
+                    // left panel
+
+                    div.col-md-4.col-lg-3
+                        div.profile-left
+                            div.item-author__top
+                                div.item-author__ava
+                                    img(src="img/item-ava.png")
+                                div.item-author__info
+                                    p.item-author__name Кирилл
+                                    p.item-author__place Золотоноша
+                            div.profile-left__divider
+                            a.profile-left__link(href="")
+                                span.profile-left__icon
+                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19M13 5C13 7.20914 11.2091 9 9 9C6.79086 9 5 7.20914 5 5C5 2.79086 6.79086 1 9 1C11.2091 1 13 2.79086 13 5Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | Личные данные
+                            div.profile-left__divider
+                            div.profile-left__link.profile-left__link--active
+                                span.profile-left__icon
+                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V19C1 19.5304 1.21071 20.0391 1.58579 20.4142C1.96086 20.7893 2.46957 21 3 21H15C15.5304 21 16.0391 20.7893 16.4142 20.4142C16.7893 20.0391 17 19.5304 17 19V7M11 1L17 7M11 1V7H17M13 12H5M13 16H5M7 8H5" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | Мои объявления
+                            a.profile-left__link(href="")
+                                span.profile-left__icon
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5 1L14.7445 7.91167L22 9.02681L16.75 14.4038L17.989 22L11.5 18.4117L5.011 22L6.25 14.4038L1 9.02681L8.2555 7.91167L11.5 1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | Избранные
+                                span.profile-left__badge 35
+                            a.profile-left__link(href="")
+                                span.profile-left__icon
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 19L8 14L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13C13.5304 1 14.0391 1.21071 14.4142 1.58579C14.7893 1.96086 15 2.46957 15 3V19Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | Сохраненный поиск
+                            a.profile-left__link(href="")
+                                span.profile-left__icon
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 9L10 12L20 2M19 10V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H14" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | На подтверждении
+                            a.profile-left__link(href="")
+                                span.profile-left__icon
+                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.1818 5.44444V17H2.81818V5.44444M9.18182 9H12.8182M1 1H21V5.44444H1V1Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | Архив объявлений
+                            a.profile-left__link(href="")
+                                span.profile-left__icon
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 9.50003C0.996559 10.8199 1.30493 12.1219 1.9 13.3C2.60557 14.7118 3.69025 15.8992 5.03255 16.7293C6.37485 17.5594 7.92176 17.9994 9.5 18C10.8199 18.0035 12.1219 17.6951 13.3 17.1L19 19L17.1 13.3C17.6951 12.1219 18.0034 10.8199 18 9.50003C17.9994 7.92179 17.5594 6.37488 16.7293 5.03258C15.8992 3.69028 14.7117 2.6056 13.3 1.90003C12.1219 1.30496 10.8199 0.996587 9.5 1.00003H9C6.91565 1.11502 4.94696 1.99479 3.47086 3.47089C1.99476 4.94699 1.11499 6.91568 1 9.00003V9.50003Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | Диалоги
+                                span.profile-left__badge 2
+                            a.profile-left__link(href="")
+                                span.profile-left__icon
+                                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 1V23M12 5H4.5C3.57174 5 2.6815 5.36875 2.02513 6.02513C1.36875 6.6815 1 7.57174 1 8.5C1 9.42826 1.36875 10.3185 2.02513 10.9749C2.6815 11.6313 3.57174 12 4.5 12H9.5C10.4283 12 11.3185 12.3687 11.9749 13.0251C12.6313 13.6815 13 14.5717 13 15.5C13 16.4283 12.6313 17.3185 11.9749 17.9749C11.3185 18.6313 10.4283 19 9.5 19H1" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | Операции
+                            div.profile-left__divider
+                            a.profile-left__link(href="")
+                                span.profile-left__icon
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H7M14 15L19 10M19 10L14 5M19 10H7" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                | Выйти
+
+                    // ads
+
+                    div.col-md-8.col-lg-9
+                        div.profile-search
+                            input.profile-search__input(type="text" placeholder="Поиск")
+                            button.profile-search__clear Очистить
+
+                        div.profile__selections
+                            div.form-check
+                                input.form-check-input(type="checkbox" id="selectAll")
+                                label.form-check-label(for="selectAll") Выделить все
+                            button.profile__selection-delete Удалить
+
+                        div.profile-item.profile-item--ads
+                            div.profile-item__selection
+                                div.form-check
+                                    input.form-check-input(type="checkbox" id="selectItem1")
+                                    label.form-check-label(for="selectItem1")
+                            div.profile-item__content
+                                div.profile-item__photo
+                                    img(src="img/item2.jpg")
+                                div.profile-item__description
+                                    div.profile-item__main
+                                        a.profile-item__name(href="") Портмоне COACH барсетка кошелек оригинал кожа
+                                        span.profile-item__price 600 грн
+                                    div.profile-item__info
+                                        span Киев
+                                        span.profile-item__date Вчера 18:24
+                                        div
+                                            span.profile-item__views 13 284
+                                            span.profile-item__buys 2955
+                            div.profile-item__right
+                                button.button.button--bordered.profile-item__edit Редактировать
+                                button.profile-item__action Скрыть
+                                button.profile-item__action Удалить
+
+                        div.profile-item.profile-item--ads
+                            div.profile-item__selection
+                                div.form-check
+                                    input.form-check-input(type="checkbox" id="selectItem2")
+                                    label.form-check-label(for="selectItem2")
+                            div.profile-item__content
+                                div.profile-item__photo
+                                    img(src="img/item2.jpg")
+                                div.profile-item__description
+                                    div.profile-item__main
+                                        a.profile-item__name(href="") Портмоне COACH барсетка кошелек оригинал кожа
+                                        span.profile-item__price 20 грн
+                                    div.profile-item__info
+                                        span Киев
+                                        span.profile-item__date 3 дня назад
+                                        div
+                                            span.profile-item__views 925
+                                            span.profile-item__buys 5
+                            div.profile-item__right
+                                button.button.button--bordered.profile-item__edit Редактировать
+                                button.profile-item__action Показать
+                                button.profile-item__action Удалить
+
+                        div.profile-item.profile-item--ads
+                            div.profile-item__selection
+                                div.form-check
+                                    input.form-check-input(type="checkbox" id="selectItem3")
+                                    label.form-check-label(for="selectItem3")
+                            div.profile-item__content
+                                div.profile-item__photo
+                                    img(src="img/item2.jpg")
+                                div.profile-item__description
+                                    div.profile-item__main
+                                        a.profile-item__name(href="") барсетка кошелек оригинал кожа
+                                        span.profile-item__price 1520 грн
+                                    div.profile-item__info
+                                        span Киев
+                                        span.profile-item__date 3 месяца назад
+                                        div
+                                            span.profile-item__views 250
+                                            span.profile-item__buys 3
+                            div.profile-item__right
+                                button.button.button--bordered.profile-item__edit Редактировать
+                                button.profile-item__action Скрыть
+                                button.profile-item__action Удалить
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>

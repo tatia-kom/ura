@@ -1,0 +1,114 @@
+.profile-block {
+  background: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 33px 40px 40px;
+
+  @include media-breakpoint-down(md) {
+    padding: 20px 20px 30px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    border-radius: 0;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+
+  &--personal {
+    @include media-breakpoint-down(xs) {
+      position: relative;
+      padding-bottom: 86px;
+
+      .profile-block__save-button {
+        position: absolute;
+        bottom: 30px;
+        width: calc(100% - 40px);
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $fontBold;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $violet;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    @include media-breakpoint-down(md) {
+      align-items: center;
+    }
+  }
+
+  &__save-button {
+    font-family: $font;
+    font-size: 15px;
+    line-height: 19px;
+    width: 130px;
+    margin-top: -13px;
+    margin-left: auto;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+    }
+  }
+
+  &__payment {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__calls {
+    margin-left: 20px;
+    flex-grow: 1;
+    border-radius: 4px;
+    border: 1px solid $divider;
+    padding: 64px 0 0 50px;
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 22px;
+      padding-right: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      padding: 15px 20px 25px;
+      order: 2;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__phone {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.3px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &__payment-button {
+    width: 159px;
+    margin-top: 20px;
+
+    @include media-breakpoint-down(md) {
+      order: 1;
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+}
