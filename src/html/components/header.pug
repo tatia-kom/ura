@@ -23,7 +23,7 @@ mixin header(cl, isAuthorized)
                                 a.dropdown-item(href="") Выйти
 
                     else
-                        a.header__link.header__link--login Войти
+                        a.header__link.header__link--login(data-toggle="modal" data-target="#loginModal") Войти
                         a.header__link.header__link--signup.d-none.d-md-block Регистрация
 
                     a.button.button--bordered.header__add.d-none.d-lg-flex Добавить объявление

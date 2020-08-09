@@ -1,0 +1,26 @@
+div.modal#loginModal(tabindex="-1" role="dialog")
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                h5.modal-title Войти
+                button.close(type="button" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true") &times;
+
+            div.modal-body
+                div.form-group
+                    label.col-form-label(for="inputEmail") Электронная почта / номер телефона
+                    input.form-control.form-control-lg(type="text" id="inputEmail" placeholder="Введите email или телефон")
+                div.form-group
+                    label.col-form-label(for="inputPassword") Пароль
+                    input.form-control.form-control-lg(type="password" id="inputPassword" placeholder="Введите пароль")
+                div.form-check.form-check-inline.modal__checkbox
+                    input.form-check-input(type="checkbox" value="" id="rememberMe" name="adsType" checked)
+                    label.form-check-label(for="rememberMe") Не выходить из системы
+                div.modal__links
+                    a(href="") Забыли пароль?
+                    span |
+                    a(href="") Регистрация
+
+            div.modal-footer
+                button.button.button--bordered(data-dismiss="modal") Закрыть
+                button.button.button--violet Войти

@@ -116,7 +116,7 @@ select, button, input, textarea {
             font-size: 17px;
             line-height: 130%;
             color: $dark;
-            padding-left: 9px;
+            padding-left: 28px;
 
             &:before {
                 content: '';
@@ -160,7 +160,7 @@ select, button, input, textarea {
             font-size: 17px;
             line-height: 130%;
             color: $dark;
-            padding-left: 12px;
+            padding-left: 36px;
 
             &:before {
                 content: '';
@@ -326,15 +326,46 @@ select, button, input, textarea {
     }
 }
 
-input.form-control-lg {
+input.form-control-lg,
+select.form-control-lg {
     font-size: 17px;
     height: 50px;
     padding: 0 18px;
 }
 
+select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-color: white;
+    background: white url('../img/select-arrow.svg') no-repeat center right 18px;
+    padding-right: 36px;
+}
+
+.text-muted {
+    color: $txt!important;
+}
+
 .flex-label {
     display: flex;
     align-items: center;
+
+    &--with_help {
+        align-items: flex-start;
+        margin-top: 12px;
+    }
+}
+
+.col-form-label {
+    @include media-breakpoint-down(xs) {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+
+    span {
+        color: $violet;
+        padding-left: 5px;
+    }
 }
 
 a {
@@ -344,5 +375,39 @@ a {
 
     &:hover {
         color: #0078AD;
+    }
+}
+
+.modal {
+    &__checkbox {
+        margin-top: 10px;
+    }
+
+    &__links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        span {
+            margin: 0 10px;
+            color: $txt;
+        }
+
+        a:hover {
+            color: $violet;
+        }
+    }
+
+    .modal-title {
+        color: $violet;
+        font-family: $fontBold;
+        text-transform: uppercase;
+    }
+
+    .modal-footer {
+        .button {
+            width: 140px;
+            margin-left: 20px;
+        }
     }
 }

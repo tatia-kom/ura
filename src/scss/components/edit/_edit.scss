@@ -1,0 +1,246 @@
+.edit {
+  padding-bottom: 80px;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 0;
+  }
+
+  &__head {
+    padding: 25px 0;
+    border-bottom: 1px solid $divider;
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px 0;
+    }
+  }
+
+  &__form {
+    margin: 30px auto 0;
+    max-width: 804px;
+
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      .form-check {
+        width: 100%;
+        margin-top: 6px;
+      }
+    }
+
+    .form-group {
+      min-height: 50px;
+    }
+
+    .form-control {
+      border-color: white;
+
+      &:active, &:focus {
+        border-color: $blue;
+      }
+    }
+
+    .flex-label {
+      @include media-breakpoint-down(xs) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__currency {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 142px;
+    border-right: 0;
+
+    @include media-breakpoint-down(xs) {
+      width: calc(40% - 1px);
+      margin-bottom: 10px;
+    }
+
+    & ~ select {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 0;
+      width: 147px;
+      margin-right: 20px;
+
+      @include media-breakpoint-down(xs) {
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__currency-divider {
+    width: 1px;
+    height: 100%;
+    background: $divider;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+
+    @include media-breakpoint-down(xs) {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 15px;
+
+      .item-card__description {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  &__author {
+    padding-top: 20px;
+
+    @include media-breakpoint-down(lg) {
+      .item-author {
+        height: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .item-author {
+        display: flex;
+
+        &__top {
+          flex-grow: 1;
+        }
+
+        &__call {
+          width: 185px;
+          flex-shrink: 0;
+        }
+
+        &__time {
+          display: flex;
+          align-items: center;
+          margin-left: 18px;
+          margin-top: 0;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .item-author {
+        padding: 20px 25px 20px;
+        flex-direction: column;
+
+        &__top {
+          flex-grow: 0;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &__ava {
+          width: 160px;
+          height: 160px;
+        }
+
+        &__info {
+          margin: 20px 0 0 0;
+        }
+
+        &__name {
+          text-align: center;
+        }
+
+        &__place {
+          text-align: center;
+        }
+
+        &__call {
+          width: 100%!important;
+          margin-top: 16px;
+        }
+
+        &__time {
+          margin: 13px 0 0 0;
+          text-align: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      .item-author {
+        padding: 20px;
+
+        &__top {
+          flex-direction: row;
+        }
+
+        &__ava {
+          width: 60px;
+          height: 60px;
+        }
+
+        &__info {
+          margin: 0 0 0 16px;
+        }
+
+        &__name {
+          text-align: left;
+        }
+
+        &__place {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 26px;
+    border-top: 1px solid $divider;
+    padding-top: 30px;
+
+    @include media-breakpoint-down(xs) {
+      .button {
+        width: 100%;
+      }
+    }
+  }
+
+  &__bottom-text {
+    text-align: center;
+    margin-bottom: 28px;
+    color: black;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 17px;
+    }
+  }
+
+  &__bottom-content {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column-reverse;
+    }
+
+    .button + .button {
+      margin-left: 20px;
+
+      @include media-breakpoint-down(xs) {
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

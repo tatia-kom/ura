@@ -35,7 +35,7 @@ function htmlBuild() {
 }
 
 function jsBuild() {
-	return gulp.src(['src/js/bootstrap.bundle.min.js', 'src/js/owl.carousel.min.js', 'src/js/scripts.js'])
+	return gulp.src(['src/js/bootstrap.bundle.min.js', 'src/js/owl.carousel.min.js', 'src/js/dropzone.min.js', 'src/js/scripts.js'])
         .pipe(concat('all-scripts.js'))
            .pipe(gulp.dest('build/js/'));
 }

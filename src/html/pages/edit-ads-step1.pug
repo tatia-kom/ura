@@ -1,0 +1,102 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Редактирование объявления | Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header('', true)
+
+        // BREADCRUMBS
+        include ../components/breadcrumbs.pug
+        +breadcrumbs('Портмоне COACH барсетка кошелек оригинал кожа', ["Личный кабинет", "Мои объявления"])
+
+        section.content.edit
+            div.edit__head
+                div.container
+                    ul.edit-steps
+                        li.edit-steps__item.edit-steps__item--active Описание
+                        li.edit-steps__item Фотографии
+                        li.edit-steps__item Контакты
+                        li.edit-steps__item Подтверждение
+
+            form
+                div.container
+                    div.row
+                        div.col-12
+                            div.edit__form
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label(for="selectCategory") Категория <span>*</span>
+                                    div.col-md-9
+                                        select.form-control.form-control-lg(id="selectCategory")
+                                            option Спорт
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label(for="selectSubcategory") Подкатегория <span>*</span>
+                                    div.col-md-9
+                                        select.form-control.form-control-lg(id="selectSubcategory")
+                                            option Спортивные товары
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label Тип <span>*</span>
+                                    div.col-md-9.flex-label
+                                        div.form-check.form-check-inline
+                                            input.form-check-input(type="radio" value="" id="type1" name="adsType" checked)
+                                            label.form-check-label(for="type1") Приватный
+                                        div.form-check.form-check-inline
+                                            input.form-check-input(type="radio" value="" id="type2" name="adsType")
+                                            label.form-check-label(for="type2") Профессиональный
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label.flex-label--with_help(for="inputName") Заголовок объявления <span>*</span>
+                                    div.col-md-9
+                                        input.form-control.form-control-lg(type="text" id="inputName" value="Портмоне COACH барсетка кошелек оригинал кожа")
+                                        small.form-text.text-muted(id="nameHelp") Хороший информативный заголовок до 60 символов
+
+                                div.form-group
+                                    label.col-form-label Описание <span>*</span>
+                                    textarea.form-control
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label Цена
+                                    div.col-md-9.flex-label
+                                        input.form-control.form-control-lg.edit__currency(type="text" value="")
+                                        span.edit__currency-divider
+                                        select.form-control.form-control-lg
+                                            option Доллары
+                                        div.form-check.form-check-inline
+                                            input.form-check-input(type="checkbox" value="" id="biddingCheckbox" name="adsBidding")
+                                            label.form-check-label(for="biddingCheckbox") Возможен торг
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label(for="selectCity") Населенный пункт <span>*</span>
+                                    div.col-md-9
+                                        select.form-control.form-control-lg(id="selectCity")
+                                            option Киев
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label.flex-label--with_help(for="inputTags") Теги
+                                    div.col-md-9
+                                        input.form-control.form-control-lg(type="text" id="inputTags" value="Футбол, баскетбол")
+                                        small.form-text.text-muted(id="tagsHelp") Введи теги, разделяя их запятой
+
+                div.edit__bottom
+                    div.container
+                        div.row
+                            div.col-12.edit__bottom-content
+                                button.button.button--violet Продолжить
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>

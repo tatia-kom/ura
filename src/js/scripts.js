@@ -1,4 +1,21 @@
 $(document).ready(function() {
+    // adding photos to ads
+
+    Dropzone.options.dropzoneForm = {
+        url: $('#dropzoneForm').attr('action'),
+        paramName: $('#uploadPhoto').attr('name'), // The name that will be used to transfer the file
+        maxFilesize: 2, // MB
+        accept: function(file, done) {
+
+        }
+    };
+
+    $('#uploadPhotoButton').click(function(e) {
+        e.preventDefault();
+        $('#dropzoneForm').click();
+    });
+
+
     // index slider
 
     $('.index-slider').addClass('owl-carousel');
@@ -135,4 +152,9 @@ $(document).ready(function() {
     $('.catalog-left-categories__item').click(function(e) {
         $(this).toggleClass('catalog-left-categories__item--active');
     });
+
+
+    $('.edit-photos').sortable();
+
+
 });

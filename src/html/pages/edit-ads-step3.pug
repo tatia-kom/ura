@@ -1,0 +1,81 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Редактирование объявления | Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header('', true)
+
+        // BREADCRUMBS
+        include ../components/breadcrumbs.pug
+        +breadcrumbs('Портмоне COACH барсетка кошелек оригинал кожа', ["Личный кабинет", "Мои объявления"])
+
+        section.content.edit
+            div.edit__head
+                div.container
+                    ul.edit-steps
+                        li.edit-steps__item.edit-steps__item--ready Описание
+                        li.edit-steps__item.edit-steps__item--ready Фотографии
+                        li.edit-steps__item.edit-steps__item--active Контакты
+                        li.edit-steps__item Подтверждение
+
+            form
+                div.container
+                    div.row
+                        div.col-12
+                            div.edit__form
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label.flex-label--with_help(for="inputName") Имя продавца <span>*</span>
+                                    div.col-md-9
+                                        input.form-control.form-control-lg(type="text" id="inputName")
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label.flex-label--with_help(for="inputEmail") Электронная почта <span>*</span>
+                                    div.col-md-9
+                                        input.form-control.form-control-lg(type="text" id="inputEmail")
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label.flex-label--with_help(for="inputPhone") Номер телефона <span>*</span>
+                                    div.col-md-9
+                                        input.form-control.form-control-lg(type="text" id="inputPhone")
+
+                                div.form-group.row
+                                    label.col-md-3
+                                    div.col-md-9
+                                        div.form-check.form-check-inline
+                                            input.form-check-input(type="checkbox" id="phone")
+                                            label.form-check-label(for="phone") Скрыть телефон
+
+                                div.form-group.row
+                                    label.col-md-3.col-form-label.flex-label Удобное время для связи
+                                    div.col-md-9
+                                        div.row
+                                            div.col-6
+                                                select.form-control.form-control-lg(id="selectTimeFrom")
+                                                    option c 10:00
+                                            div.col-6
+                                                select.form-control.form-control-lg(id="selectTimeTo")
+                                                    option до 10:00
+
+                div.edit__bottom
+                    div.container
+                        div.row
+                            div.col-12.edit__bottom-content
+                                button.button.button--bordered Назад
+                                button.button.button--violet Продолжить
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>

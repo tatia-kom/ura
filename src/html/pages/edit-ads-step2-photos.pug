@@ -1,0 +1,107 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Редактирование объявления | Ура!
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header('', true)
+
+        // BREADCRUMBS
+        include ../components/breadcrumbs.pug
+        +breadcrumbs('Портмоне COACH барсетка кошелек оригинал кожа', ["Личный кабинет", "Мои объявления"])
+
+        section.content.edit
+            div.edit__head
+                div.container
+                    ul.edit-steps
+                        li.edit-steps__item.edit-steps__item--ready Описание
+                        li.edit-steps__item.edit-steps__item--active Фотографии
+                        li.edit-steps__item Контакты
+                        li.edit-steps__item Подтверждение
+
+            div.container
+                div.row
+                    div.col-12
+                        div.edit-photos
+                            div.edit-photos__item
+                                div.edit-photos__photo
+                                    img(src="img/item1.png")
+                                div.edit-photos__actions
+                                    // drag item
+                                    button.edit-photos__button.drag-item
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.4 6.6L1 9M1 9L3.4 11.4M1 9H17M6.6 3.4L9 1M9 1L11.4 3.4M9 1V17M11.4 14.6L9 17M9 17L6.6 14.6M14.6 6.6L17 9M17 9L14.6 11.4" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    // open big photo
+                                    button.edit-photos__button(data-fancybox="gallery" href="img/item.png")
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17 17L13.1333 13.1333M15.2222 8.11111C15.2222 12.0385 12.0385 15.2222 8.11111 15.2222C4.18375 15.2222 1 12.0385 1 8.11111C1 4.18375 4.18375 1 8.11111 1C12.0385 1 15.2222 4.18375 15.2222 8.11111Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    // delete item
+                                    button.edit-photos__button
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 4.6H2.77778M2.77778 4.6H17M2.77778 4.6V17.2C2.77778 17.6774 2.96508 18.1352 3.29848 18.4728C3.63187 18.8104 4.08406 19 4.55556 19H13.4444C13.9159 19 14.3681 18.8104 14.7015 18.4728C15.0349 18.1352 15.2222 17.6774 15.2222 17.2V4.6H2.77778ZM5.44444 4.6V2.8C5.44444 2.32261 5.63175 1.86477 5.96514 1.52721C6.29854 1.18964 6.75073 1 7.22222 1H10.7778C11.2493 1 11.7015 1.18964 12.0349 1.52721C12.3683 1.86477 12.5556 2.32261 12.5556 2.8V4.6M7.22222 9.1V14.5M10.7778 9.1V14.5" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                            div.edit-photos__item
+                                div.edit-photos__photo
+                                    img(src="img/item1.png")
+                                div.edit-photos__actions
+                                    // drag item
+                                    button.edit-photos__button.drag-item
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.4 6.6L1 9M1 9L3.4 11.4M1 9H17M6.6 3.4L9 1M9 1L11.4 3.4M9 1V17M11.4 14.6L9 17M9 17L6.6 14.6M14.6 6.6L17 9M17 9L14.6 11.4" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    // open big photo
+                                    button.edit-photos__button(data-fancybox="gallery" href="img/item.png")
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17 17L13.1333 13.1333M15.2222 8.11111C15.2222 12.0385 12.0385 15.2222 8.11111 15.2222C4.18375 15.2222 1 12.0385 1 8.11111C1 4.18375 4.18375 1 8.11111 1C12.0385 1 15.2222 4.18375 15.2222 8.11111Z" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    // delete item
+                                    button.edit-photos__button
+                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 4.6H2.77778M2.77778 4.6H17M2.77778 4.6V17.2C2.77778 17.6774 2.96508 18.1352 3.29848 18.4728C3.63187 18.8104 4.08406 19 4.55556 19H13.4444C13.9159 19 14.3681 18.8104 14.7015 18.4728C15.0349 18.1352 15.2222 17.6774 15.2222 17.2V4.6H2.77778ZM5.44444 4.6V2.8C5.44444 2.32261 5.63175 1.86477 5.96514 1.52721C6.29854 1.18964 6.75073 1 7.22222 1H10.7778C11.2493 1 11.7015 1.18964 12.0349 1.52721C12.3683 1.86477 12.5556 2.32261 12.5556 2.8V4.6M7.22222 9.1V14.5M10.7778 9.1V14.5" stroke="#00A7F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+
+                            div.edit-photos__item.edit-photos__item--empty
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 10V22M10 16H22M31 16C31 24.2843 24.2843 31 16 31C7.71573 31 1 24.2843 1 16C1 7.71573 7.71573 1 16 1C24.2843 1 31 7.71573 31 16Z" stroke="#00A7F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            div.edit-photos__item.edit-photos__item--empty.d-none.d-sm-flex
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 10V22M10 16H22M31 16C31 24.2843 24.2843 31 16 31C7.71573 31 1 24.2843 1 16C1 7.71573 7.71573 1 16 1C24.2843 1 31 7.71573 31 16Z" stroke="#00A7F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            div.edit-photos__item.edit-photos__item--empty.d-none.d-md-flex
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 10V22M10 16H22M31 16C31 24.2843 24.2843 31 16 31C7.71573 31 1 24.2843 1 16C1 7.71573 7.71573 1 16 1C24.2843 1 31 7.71573 31 16Z" stroke="#00A7F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                        p.edit-photos-hint Можно загрузить до 5 фотографий в формате jpg или png.<br />Используйте реальные фотографии продукта, а не каталоги.
+
+            div.edit__bottom
+                div.container
+                    div.row
+                        div.col-12.edit__bottom-content
+                            button.button.button--bordered Назад
+                            button.button.button--violet Продолжить
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="js/all-scripts.js"></script>

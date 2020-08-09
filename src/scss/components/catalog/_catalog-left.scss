@@ -30,6 +30,10 @@
     .form-check {
       margin-top: 8px;
 
+      .form-check-label {
+        padding-left: 9px!important;
+      }
+
       &:first-child {
         margin-top: 0;
       }

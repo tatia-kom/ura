@@ -1,0 +1,175 @@
+.edit-photos {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: calc(20% - 16px);
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:nth-child(5n+5) {
+      margin-right: 0;
+
+      @include media-breakpoint-down(md) {
+        margin-right: 20px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      width: calc(33.33% - 14px);
+
+      &:nth-child(3n+3) {
+        margin-right: 0!important;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: calc(50% - 10px);
+
+      &:nth-child(3n+3) {
+        margin-right: 20px!important;
+      }
+
+      &:nth-child(even) {
+        margin-right: 0!important;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+      margin-right: 0!important;
+    }
+
+    &--empty {
+      border: 2px dashed $divider;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      min-height: 206px;
+
+      @include media-breakpoint-down(lg) {
+        min-height: 169px;
+      }
+
+      @include media-breakpoint-down(md) {
+        min-height: 207px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        min-height: 193px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        min-height: 244px;
+      }
+
+      svg path {
+        transition: 0.3s;
+      }
+
+      &:hover {
+        svg path {
+          stroke: $violet;
+        }
+      }
+    }
+  }
+
+  &__photo {
+    height: 165px;
+
+    @include media-breakpoint-down(lg) {
+      height: 128px;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 167px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 153px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      height: 204px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__actions {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: none;
+    outline: none!important;
+
+    svg path {
+      transition: 0.3s;
+    }
+
+    &:hover {
+      svg path {
+        stroke: $violet;
+      }
+    }
+  }
+}
+
+.edit-photos-form {
+  border: 2px dashed $divider;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 15px;
+    text-align: center;
+
+    @include media-breakpoint-down(xs) {
+      max-width: 180px;
+    }
+  }
+
+  &__button {
+    margin-top: 16px;
+  }
+
+  .dz-default, .dz-message {
+    display: none;
+  }
+}
+
+.edit-photos-hint {
+  font-size: 15px;
+  color: $txt;
+  margin-top: 30px;
+  text-align: center;
+}

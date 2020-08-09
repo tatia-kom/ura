@@ -1,0 +1,53 @@
+doctype html
+html
+    head
+        meta(http-equiv="text/html" charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Редактирование объявления | Ура!
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+    body
+        // HEADER
+        include ../components/header.pug
+        +header('', true)
+
+        // BREADCRUMBS
+        include ../components/breadcrumbs.pug
+        +breadcrumbs('Портмоне COACH барсетка кошелек оригинал кожа', ["Личный кабинет", "Мои объявления"])
+
+        section.content.edit
+            div.edit__head
+                div.container
+                    ul.edit-steps
+                        li.edit-steps__item.edit-steps__item--ready Описание
+                        li.edit-steps__item.edit-steps__item--active Фотографии
+                        li.edit-steps__item Контакты
+                        li.edit-steps__item Подтверждение
+
+            div.container
+                div.row
+                    div.col-12
+                        div.edit__form
+                            form.edit-photos-form.dropzone#dropzoneForm(action="/uploadFilesUrl" method="POST" enctype="multipart/form-data")
+                                span.edit-photos-form__text Перетащите файлы сюда или нажмите кнопку
+                                input.d-none(type="file" id="uploadPhoto" multiple="true" name="fileInputName")
+                                button.button.button--bordered.edit-photos-form__button#uploadPhotoButton Выбрать фото
+                            p.edit-photos-hint Можно загрузить до 5 фотографий в формате jpg или png.<br />Используйте реальные фотографии продукта, а не каталоги.
+
+            div.edit__bottom
+                div.container
+                    div.row
+                        div.col-12.edit__bottom-content
+                            button.button.button--bordered Назад
+                            button.button.button--violet Продолжить
+
+
+        // NUMBERS
+        include ../components/numbers.pug
+
+        // FOOTER
+        include ../components/footer.pug
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/all-scripts.js"></script>
